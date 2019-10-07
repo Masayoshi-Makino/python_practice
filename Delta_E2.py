@@ -15,3 +15,11 @@ for i in range(len(Energy)-1):
     Delta.append(D)
 
 print(Delta)
+
+path_w = input("Enter the path name where you want to make file.\n")
+deta2 = open(path_w, "w")
+for j in range(len(Delta)):
+    deta2.write(str(Delta[j]))
+    deta2.write("\n")
+
+deta2.close()
